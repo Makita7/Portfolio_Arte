@@ -1,0 +1,9 @@
+Agregue las keywords y la descripción a cada pagina.
+
+Cambie el titulo del index por Home pero deje los demas titulos porque me parecia que ya estaban a corde a el contenido.
+
+Tambien sume un titulo a cada pagina.
+
+las imagenes ya estaban optimizadas
+
+Y agregue un link de error 404 para cuando este roto un link.
