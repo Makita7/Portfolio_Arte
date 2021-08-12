@@ -1,3 +1,7 @@
+$fontLogo:'Caveat', cursive;
+$logoColor:#e5efc1;
+$fontMenu:'Amatic SC', cursive;
+
 *{
     padding: 0%;
     margin: 0%;
@@ -5,14 +9,23 @@
 }
 
 /*Index*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 header{
     background-color: #38aea8;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     
     .logo{
-        font-family: 'Caveat', cursive;
-        color: #e5efc1;
+        font-family: $fontLogo;
+        color: $logoColor;
         padding-right: 2rem;
     }
     .link-color{
@@ -21,12 +34,11 @@ header{
         color: #e5efc1;
         padding-top: 0.5rem;
         font-weight: bold;
-        font-family: 'Amatic SC', cursive;
+        font-family: $fontMenu;
     }
 }
 
 main{
-    padding-top: 2rem;
     min-height: 80vh;
     .banner{
         max-width: 100%;
@@ -38,6 +50,10 @@ main{
     #vertical-align{
         vertical-align: top;
     }
+}
+
+#padding-top{
+    padding-top: 2rem;
 }
 
 .banner{
@@ -59,20 +75,26 @@ footer{
     text-align: center;
 }
 
+.button{
+    max-height: 10px;
+}
 
 /*GALLERY Animations - Transformations*/
-    h2{
-        animation-duration: 2s;
-        animation-name: fadeIn;
-        font-family: 'Amatic SC', cursive;
-        font-size: 3rem;
-    }
+h2{
+    animation-duration: 2s;
+    animation-name: fadeIn;
+    font-family: $fontMenu;
+    font-size: 3rem;
+}
 
-    .gallery{
-        max-width: 370px;
-        max-height: auto;
-    }
+.gallery{
+    max-width: 370px;
+    max-height: auto;
+}
 
+.horizontal-align-center{
+    justify-content: center;
+}
 
 @keyframes fadeIn{
     0%{
