@@ -31,15 +31,23 @@ header{
     .link-color{
         text-decoration: none;
         font-size: 1.5rem;
-        color: #e5efc1;
         padding-top: 0.5rem;
         font-weight: bold;
         font-family: $fontMenu;
     }
+    .bg-light {
+        background-color: #38aea8!important;
+    }
+    .navbar-light .navbar-nav .nav-link{
+            color: #e5efc1;
+        }
+    #center{
+        justify-content: center;
+    }
 }
 
 main{
-    min-height: 80vh;
+    min-height: 70vh;
     .banner{
         max-width: 100%;
         height: auto;
@@ -90,10 +98,6 @@ h2{
 .gallery{
     max-width: 370px;
     max-height: auto;
-}
-
-.horizontal-align-center{
-    justify-content: center;
 }
 
 @keyframes fadeIn{
@@ -160,3 +164,83 @@ h2{
     }
 }
 
+/*Adjustment for other screens*/
+
+@media only screen and (max-width: 320px){
+    main{
+        min-height: 20vh;
+        .left_margin{
+            margin-left: 0%;
+        }
+    }
+    footer {
+        .nav-link{
+            padding: .3rem 0.5rem;
+        }
+        img{
+            width: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        min-height: 50vh;
+    }
+    .left_margin{
+        margin-left: 0%;
+    }
+    .programs{
+        max-height: 50px;
+        padding: 3px;
+    }
+    .flex-box{
+        display: flex;
+        justify-content: center;
+        .error{
+            max-width: 70%;
+        }
+    }
+    #vertical-align{
+        vertical-align: middle;
+    }
+    footer {
+        .nav-link{
+            padding: .3rem 0.5rem;
+        }
+        img{
+            width: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    main{
+        min-height: 60vh;
+        .me{
+            display: none;
+        }
+    }
+    .left_margin{
+        margin-left: 0%;
+    }
+    .programs{
+        max-height: 50px;
+        padding: 4px;
+    }
+    .flex-box{
+        display: flex;
+        justify-content: center;
+        .error{
+            max-width: 50%;
+        }
+    }
+    footer {
+        .nav-link{
+            padding: .4rem 0.7rem;
+        }
+        img{
+            width: 25px;
+        }
+    }
+}
