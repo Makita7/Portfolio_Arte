@@ -84,6 +84,14 @@ footer {
   padding-top: 15px;
 }
 
+footer .copyright {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer #center {
+  text-align: center;
+}
+
 .center {
   justify-content: center;
   text-align: center;
