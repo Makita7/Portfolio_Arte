@@ -75,12 +75,16 @@ main{
 }
 
 footer{
-    padding-top: 15px;
+    padding-top: 7px;
+    background-color: white;
     .copyright{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     #center{
         text-align: center;
+    }
+    .copy{
+        color: black;
     }
 }
 
@@ -186,6 +190,7 @@ h2{
         img{
             width: 20px;
         }
+        background-color: #cbe7e6;
     }
 }
 
@@ -217,6 +222,7 @@ h2{
         img{
             width: 20px;
         }
+        background-color: #cbe7e6;
     }
 }
 

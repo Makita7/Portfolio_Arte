@@ -81,7 +81,8 @@ main #vertical-align {
 }
 
 footer {
-  padding-top: 15px;
+  padding-top: 7px;
+  background-color: white;
 }
 
 footer .copyright {
@@ -90,6 +91,10 @@ footer .copyright {
 
 footer #center {
   text-align: center;
+}
+
+footer .copy {
+  color: black;
 }
 
 .center {
@@ -188,6 +193,9 @@ h2 {
   main .left_margin {
     margin-left: 0%;
   }
+  footer {
+    background-color: #cbe7e6;
+  }
   footer .nav-link {
     padding: .3rem 0.5rem;
   }
@@ -216,6 +224,9 @@ h2 {
   }
   #vertical-align {
     vertical-align: middle;
+  }
+  footer {
+    background-color: #cbe7e6;
   }
   footer .nav-link {
     padding: .3rem 0.5rem;
